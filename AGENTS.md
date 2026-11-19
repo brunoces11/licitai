@@ -11,3 +11,9 @@
 
 - Antes de criar ou modificar layout, design, tabelas, telas, dashboards, painéis ou outros componentes de interface deste projeto, leia integralmente `Style Guide Design.txt` na raiz e siga suas diretrizes visuais, de espaçamento, tipografia, componentes, acessibilidade e modos claro e escuro, respeitando o escopo solicitado e as instruções mais específicas do usuário.
 - Use os mesmos papéis de cor definidos no guia para as três paletas. A paleta IN Groupe é a referência padrão, salvo escolha diferente do usuário ou necessidade de preservar a identidade existente. Quando o usuário mencionar acento, contraste, apoio ou subtom, interprete pela paleta e pelo modo em uso. Implemente os papéis necessários ao trabalho solicitado; não presuma autorização para alterar outras telas ou criar seletor de tema.
+
+# Commit e push automáticos deste projeto
+
+- Ao concluir cada tarefa que alterar arquivos, depois das verificações cabíveis, faça automaticamente o commit das alterações autorizadas para a tarefa e o push dos commits pendentes da branch atual para seu upstream configurado no GitHub. Respeite o `.gitignore` e preserve alterações preexistentes fora do escopo, salvo autorização do usuário para incluí-las.
+- Use uma mensagem personalizada que resuma a modificação de forma clara, sucinta e direta. Quando houver mais de um item relevante, separe os itens com ponto e vírgula.
+- Não faça commit ou push em tarefas que não alterem arquivos. Não use `--force`, `--no-verify` ou equivalentes sem pedido explícito do usuário. Se o commit ou o push falhar, relate o erro sem contorná-lo. Uma instrução específica do usuário para não fazer commit ou push prevalece sobre esta regra.
