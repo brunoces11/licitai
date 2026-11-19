@@ -1,0 +1,13 @@
+# Referência obrigatória do perfil IN Groupe
+
+- Antes de qualquer consulta, resposta, análise ou implementação sobre serviços relevantes, perfil de registros procurados, áreas de atuação, segmentos, editais, licitações, concorrências ou contratos de interesse da IN Groupe, leia integralmente o arquivo `PERFIL_INGROUPE.txt` na raiz deste projeto. A obrigação também se aplica às grafias Ingroup, InGroupe e IN GROUPE.
+- Use esse arquivo como referência central da lista completa de categorias, seus pesos de relevância, limites de enquadramento, exclusões e fontes. Toda criação ou revisão de filtro, classificação, pontuação ou ordenação por aderência deve partir dos pesos vigentes nele, sem substituí-los por valores lembrados de conversas ou inventados.
+- Considere `CONTEXTO_EMAIL_ERIK.txt` a fonte local de contexto comercial para aprofundamento e verificação das prioridades. Consulte-o quando necessário para interpretar o perfil ou propor atualizações. Consulte apenas as fontes autorizadas pelo usuário para fundamentar ampliações: contexto fornecido, documentos indicados e site oficial da IN Groupe.
+- Diferencie pesos definidos para este projeto de informações oficiais da empresa; aderência temática de capacidade comercial; solução própria de integração/parceria; e oportunidade aberta de planejamento, contrato ou inteligência competitiva. Não presuma disponibilidade ou habilitação no Brasil.
+- Se o perfil estiver ausente, ilegível ou divergente das fontes, informe a limitação antes de concluir a classificação; não reconstrua categorias ou pesos por suposição. Alterações no mapa exigem autorização e conferência do total de 100%, do limite de itens e da proporção estabelecida no próprio arquivo.
+- A leitura do perfil não autoriza executar alterações no coletor, nos bancos ou em filtros. Respeite o escopo solicitado pelo usuário e as demais instruções de autorização do projeto.
+
+# Referência obrigatória de design
+
+- Antes de criar ou modificar layout, design, tabelas, telas, dashboards, painéis ou outros componentes de interface deste projeto, leia integralmente `Style Guide Design.txt` na raiz e siga suas diretrizes visuais, de espaçamento, tipografia, componentes, acessibilidade e modos claro e escuro, respeitando o escopo solicitado e as instruções mais específicas do usuário.
+- Use os mesmos papéis de cor definidos no guia para as três paletas. A paleta IN Groupe é a referência padrão, salvo escolha diferente do usuário ou necessidade de preservar a identidade existente. Quando o usuário mencionar acento, contraste, apoio ou subtom, interprete pela paleta e pelo modo em uso. Implemente os papéis necessários ao trabalho solicitado; não presuma autorização para alterar outras telas ou criar seletor de tema.

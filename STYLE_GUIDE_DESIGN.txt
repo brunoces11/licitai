@@ -1,0 +1,107 @@
+STYLE GUIDE DESIGN — PAINEL DE OPORTUNIDADES
+
+1. DIREÇÃO VISUAL
+
+Interface minimalista, elegante e futurista, inspirada nas referências fornecidas: painéis escuros ou claros com transparência controlada, profundidade suave, bordas finas e destaques pontuais. Priorizar leitura, hierarquia e aproveitamento da tela. A lista de oportunidades é o centro da experiência; indicadores e elementos decorativos não devem dominá-la.
+
+Este guia contém três paletas com os mesmos papéis e versões dark e light. A paleta IN Groupe é a referência padrão para novos trabalhos, salvo indicação diferente do usuário ou necessidade de preservar uma identidade existente. A paleta Original reproduz a direção visual já proposta; a Fresh é uma alternativa azul–verde. Escolher uma paleta por interface e manter seus papéis consistentes. Não misturar cores de paletas sem solicitação.
+
+2. PAPÉIS COMPARTILHADOS
+
+Fundo: base da tela. Superfície: navegação e painéis estruturais. Card: área de conteúdo sobre a superfície. Linha/campo: preenchimento discreto para linhas, campos e estados de repouso. Borda: separação sutil de componentes. Texto principal: títulos, dados e informações essenciais. Texto secundário: metadados e descrições legíveis. Acento: ação primária e elementos selecionados. Texto no acento: texto ou ícone sobre o preenchimento de acento. Contraste: segunda cor expressiva, usada pontualmente para realces ou gráficos; não confundir com contraste de acessibilidade. Apoio natural: cor complementar de gráficos, marcadores e detalhes. Subtom: tom discreto para áreas de apoio e variações de superfície.
+
+Quando o usuário mencionar uma cor de acento, contraste, apoio ou subtom, interpretar pelo papel equivalente da paleta e do modo ativos, salvo indicação específica. Os valores são pontos de partida para implementação, não regras para sobrescrever decisões explícitas do usuário.
+
+3. PALETA ORIGINAL — VIOLETA, CORAL E ROSA
+
+Papel                 | Dark       | Light
+Fundo                 | #100A20    | #F4EFF8
+Superfície            | #1F1430    | #FBF8FD
+Card                  | #2C1D3D    | #F7F3FA
+Linha/campo           | #382848    | #EDE5F2
+Borda                 | #59466A    | #D9CDDF
+Texto principal       | #F7F4FA    | #241632
+Texto secundário      | #C4B9CE    | #66576E
+Acento                | #F450A6    | #9C1763
+Texto no acento       | #180E27    | #FFFFFF
+Contraste             | #FF9A82    | #A83F36
+Apoio natural         | #A78AC4    | #725388
+Subtom                | #24103E    | #E2D4EB
+
+Na versão dark, o fundo pode receber um brilho difuso #6822A8; o degradê coral #FF9A82 → rosa #F450A6 é reservado a gráficos e destaques. A referência original usa superfície rgba(31, 20, 48, 0.88), card rgba(44, 29, 61, 0.82), linha rgba(255, 255, 255, 0.045) e borda rgba(255, 255, 255, 0.12). Os valores sólidos acima são alternativas previsíveis; ajustar transparência segundo o contraste efetivo.
+
+4. PALETA IN GROUPE — AZUL, VERDE, VERMELHO E BEGE
+
+Papel                 | Dark       | Light
+Fundo                 | #101C20    | #F1F0E9
+Superfície            | #172427    | #FFFFFF
+Card                  | #1C292A    | #F8F6F0
+Linha/campo           | #2A3836    | #EBEEE7
+Borda                 | #53615B    | #CDD5CC
+Texto principal       | #F8F5F1    | #17252C
+Texto secundário      | #CBCBC2    | #5A665F
+Acento                | #91B9FF    | #003087
+Texto no acento       | #10203D    | #FFFFFF
+Contraste             | #EF8A80    | #A32324
+Apoio natural         | #94B59A    | #416A4A
+Subtom                | #B08B77    | #E8D8CB
+
+Critério: azul profundo inspirado na marca; vermelho e vinho inspirados na roupa e no detalhe da marca; verdes, da vegetação; bege e marrom suave, dos tons presentes na fotografia. Para um segundo vinho de apoio, usar #71333D no light e #C27C87 no dark, com parcimônia. O subtom é decorativo e não substitui texto ou indicação de estado. As cores são interpretações aproximadas da imagem, não uma especificação oficial da identidade visual da IN Groupe.
+
+5. PALETA FRESH — AZUL E VERDE VIVOS
+
+Papel                 | Dark       | Light
+Fundo                 | #071D26    | #EDF6F6
+Superfície            | #0A2731    | #FFFFFF
+Card                  | #102E38    | #F2F9F8
+Linha/campo           | #193C44    | #E1F0EE
+Borda                 | #42666B    | #C2DAD7
+Texto principal       | #F2F9FA    | #102D39
+Texto secundário      | #B6CFD1    | #49666A
+Acento                | #74D9A6    | #006853
+Texto no acento       | #0C1D1D    | #FFFFFF
+Contraste             | #63C9F4    | #006A98
+Apoio natural         | #75C6B6    | #397A70
+Subtom                | #244D53    | #CEE8E2
+
+Usar a passagem do azul ao verde de forma pontual em gráficos ou detalhes, com o acento sólido em ações que precisem de texto. A intensidade das cores não deve comprometer a serenidade da interface.
+
+6. MODOS, TRANSPARÊNCIA E ACESSIBILIDADE
+
+Dark: fundo profundo, superfícies progressivamente mais claras e texto claro. Light: fundo suavemente colorido, superfície branca ou quase branca e texto escuro. Em ambos, manter a mesma hierarquia, distribuição e significado dos papéis. A mudança de modo não deve mudar o significado dos dados.
+
+O efeito de vidro é opcional: painéis podem usar transparência moderada e desfoque de 16–24 px, desde que o conteúdo permaneça legível sobre todo o fundo. Oferecer superfície sólida como alternativa se o desfoque não estiver disponível. Não depender de efeitos para separar áreas.
+
+Validar as cores no resultado renderizado, especialmente sobre degradês, transparências e imagens. Buscar contraste mínimo de 4,5:1 para texto normal e 3:1 para texto grande e componentes essenciais. Usar a cor “texto no acento” sobre o acento sólido correspondente; não presumir que texto sobre degradê terá contraste adequado. Foco de teclado visível, rótulos claros e estados distinguíveis sem depender apenas de cor são obrigatórios. Não atribuir significado de sucesso, alerta ou erro às cores da marca sem rótulo e validação contextual.
+
+7. TIPOGRAFIA
+
+Família sugerida: Inter, com fonte do sistema como alternativa. Usar uma família e hierarquia concisa:
+- Título da página: 24/32 px, peso 600.
+- Título de seção: 16/24 px, peso 600.
+- Número de destaque: 28/34 px, peso 600.
+- Corpo e título de oportunidade: 14/20 px, pesos 400–500.
+- Metadados e controles: 13/18 px, pesos 400–500.
+- Rótulo auxiliar: 12/16 px, pesos 500–600.
+
+Usar caixa alta e espaçamento entre letras de 0,08 em apenas em rótulos curtos. Aplicar algarismos tabulares a valores e datas quando útil para comparação. Evitar texto secundário fraco ou excessivamente pequeno.
+
+8. ESTRUTURA E ESPAÇAMENTO
+
+Em desktop, usar 1440 px como referência de projeto, não como largura fixa. Sidebar de aproximadamente 224 px; área principal fluida com 32 px de margem interna lateral; grade de 12 colunas e 24 px entre blocos principais. Cabeçalho com título e contexto à esquerda e ações essenciais à direita. Filtros próximos à lista e indicadores compactos acima dela. Ajustar a grade à densidade real dos dados.
+
+Escala de 4 px: 4 px entre ícone e texto curto; 8 px entre elementos diretamente relacionados; 12 px entre controles compactos; 16 px para padding de linha e separação de campos; 24 px para padding de card e separação de blocos; 32 px nas margens principais; 40 px entre grandes seções quando necessário. O espaço interno de um grupo deve ser menor que o espaço que o separa de outro.
+
+Em telas menores, reduzir margens para 16–24 px, recolher a navegação quando apropriado e reorganizar cards em menos colunas. Preservar leitura e acesso às informações da tabela; adaptar colunas ou permitir rolagem horizontal localizada quando necessário.
+
+9. COMPONENTES E INTERAÇÃO
+
+- Sidebar: ícones lineares de 18–20 px; itens de 40–44 px; item ativo com superfície distinta e texto legível. Separar apenas grupos relevantes.
+- Cards: borda fina de 1 px, raio de 12–16 px, padding de 24 px e sombra difusa discreta. Usar poucas camadas visuais.
+- Tabelas e listas: cabeçalhos claros, colunas alinhadas e espaço consistente; linhas inicialmente entre 64–80 px, adaptadas ao conteúdo. Título em primeiro plano e metadados em segundo. Evidenciar seleção com borda ou superfície, sem depender só da cor.
+- Filtros e campos: altura sugerida de 40 px, raio de 8–10 px, fundo discreto e borda sutil. Diferenciar filtros ativos e fornecer rótulos.
+- Botões: ação primária com acento e texto correspondente; secundárias com fundo discreto ou borda. Alvos de ícones de pelo menos 44 × 44 px, mesmo com ícone menor.
+- Gráficos: poucos tons, rótulos claros e destaque pontual para a série em foco; não sacrificar a comparação por decoração.
+- Interação: hover com mudança sutil de superfície ou borda em aproximadamente 150–200 ms; foco por teclado claramente visível. Respeitar preferência de movimento reduzido.
+
+Não introduzir dados, métricas ou classificações de exemplo como se fossem reais. A forma visual de situação, aderência e demais dimensões deve preservar seus significados independentes e as regras documentais do projeto.

@@ -1,0 +1,52 @@
+<!doctype html>
+<html lang="pt-BR">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="color-scheme" content="dark">
+  <title>Radar de oportunidades | IN Groupe</title>
+  <link rel="stylesheet" href="styles.css">
+  <script src="app.js" defer></script>
+</head>
+<body>
+  <svg class="svg-defs" xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
+    <symbol id="i-grid" viewBox="0 0 24 24"><rect x="3" y="3" width="7" height="7" rx="1.5"/><rect x="14" y="3" width="7" height="7" rx="1.5"/><rect x="3" y="14" width="7" height="7" rx="1.5"/><rect x="14" y="14" width="7" height="7" rx="1.5"/></symbol>
+    <symbol id="i-list" viewBox="0 0 24 24"><path d="M8 6h13M8 12h13M8 18h13M3 6h.01M3 12h.01M3 18h.01"/></symbol>
+    <symbol id="i-spark" viewBox="0 0 24 24"><path d="m12 3 1.8 5.5L19.5 10l-5.7 1.7L12 17l-1.8-5.3L4.5 10l5.7-1.5L12 3ZM19 16l.8 2.2L22 19l-2.2.8L19 22l-.8-2.2L16 19l2.2-.8L19 16Z"/></symbol>
+    <symbol id="i-search" viewBox="0 0 24 24"><circle cx="10.5" cy="10.5" r="6.5"/><path d="m16 16 4.5 4.5"/></symbol>
+    <symbol id="i-calendar" viewBox="0 0 24 24"><rect x="3" y="5" width="18" height="16" rx="2"/><path d="M7 3v4m10-4v4M3 10h18"/></symbol>
+    <symbol id="i-file" viewBox="0 0 24 24"><path d="M6 3h8l4 4v14H6zM14 3v5h4M9 12h6M9 16h6"/></symbol>
+    <symbol id="i-close" viewBox="0 0 24 24"><path d="M6 6l12 12M18 6 6 18"/></symbol>
+    <symbol id="i-chevron" viewBox="0 0 24 24"><path d="m8 10 4 4 4-4"/></symbol>
+    <symbol id="i-clock" viewBox="0 0 24 24"><circle cx="12" cy="12" r="9"/><path d="M12 7v5l3 2"/></symbol>
+  </svg>
+  <div class="app-shell">
+    <aside class="sidebar" aria-label="Navegação principal">
+      <a class="brand" href="#inicio" aria-label="Radar IN Groupe, início"><span class="brand-mark" aria-hidden="true"><span></span><span></span><span></span><span></span></span><span><strong>radar</strong><small>IN GROUPE</small></span></a>
+      <div class="side-label">ESPAÇO DE TRABALHO</div>
+      <nav class="side-nav">
+        <a class="nav-link active" href="#inicio"><svg><use href="#i-grid"/></svg><span>Visão geral</span></a>
+        <a class="nav-link" href="#oportunidades"><svg><use href="#i-list"/></svg><span>Oportunidades</span></a>
+      </nav>
+      <div class="sidebar-bottom"><span class="side-orbit"><svg><use href="#i-spark"/></svg></span><div><strong>Seu radar diário</strong><p>Informação para decidir melhor.</p></div></div>
+    </aside>
+    <main id="inicio" class="main">
+      <header class="topbar"><div class="breadcrumb"><span>ESPAÇO DE TRABALHO</span><span class="crumb-divider">/</span><strong>Visão geral</strong></div><span class="demo-badge"><span></span>Demonstração · dados simulados</span></header>
+      <div class="content">
+        <section class="intro"><div><div class="eyebrow"><span class="eyebrow-line"></span> INTELIGÊNCIA EM OPORTUNIDADES</div><h1>Radar de oportunidades<span class="title-dot">.</span></h1><p>Uma visão clara para encontrar o que importa.</p></div><div class="intro-date"><svg><use href="#i-calendar"/></svg><span>Quarta-feira, 18 nov 2026</span></div></section>
+        <section class="overview" aria-labelledby="overview-title"><div class="section-heading"><div><p class="overline">SEU RESUMO DIÁRIO</p><h2 id="overview-title">Um olhar sobre ontem <span class="heading-date">· 18 de novembro</span></h2></div><span class="section-aside">Dados ilustrativos</span></div>
+          <div class="overview-grid">
+            <article class="metric-card metric-total"><div class="card-top"><span class="card-label">PUBLICAÇÕES COLETADAS</span><span class="icon-tile"><svg><use href="#i-file"/></svg></span></div><div class="metric-number" id="total-count">—</div><p>Registros recebidos no dia</p><div class="metric-footer"><span class="mini-line"></span><span id="processed-count">Calculando…</span></div></article>
+            <article class="metric-card metric-direct"><div class="card-top"><span class="card-label">DESTAQUES</span><span class="icon-tile blue"><svg><use href="#i-spark"/></svg></span></div><div class="metric-line"><span class="metric-number" id="direct-count">—</span><span class="percent blue-text" id="direct-percent">—</span></div><p>Aderência direta identificada</p><div class="metric-footer"><span class="tiny-dot blue-bg"></span>Para conhecer primeiro</div></article>
+            <article class="metric-card metric-attention"><div class="card-top"><span class="card-label">ATENÇÃO</span><span class="icon-tile green"><svg><use href="#i-clock"/></svg></span></div><div class="metric-line"><span class="metric-number" id="attention-count">—</span><span class="percent green-text" id="attention-percent">—</span></div><p>Potenciais e a esclarecer</p><div class="metric-footer"><span class="tiny-dot green-bg"></span>Precisam de mais contexto</div></article>
+          </div><p class="partial-note" id="partial-note"></p>
+        </section>
+        <section class="chart-card" aria-labelledby="chart-title"><div class="chart-copy"><p class="overline">MOVIMENTO RECENTE</p><h2 id="chart-title">Publicações por dia</h2><p>Um panorama dos últimos<br>sete dias.</p><div class="chart-legend"><span class="legend-line"></span> Publicações <span class="legend-separator">·</span> <span>Dados simulados</span></div></div><div class="chart-area" id="chart" aria-label="Gráfico de publicações dos últimos sete dias"></div></section>
+        <section class="feed-section" id="oportunidades" aria-labelledby="feed-title"><div class="feed-heading"><div><p class="overline">OPORTUNIDADES IDENTIFICADAS</p><h2 id="feed-title">Seu feed <span class="title-dot">.</span></h2><p id="feed-context">Mais recentes primeiro</p></div><div class="filter-wrap"><button type="button" class="filter-button" id="filter-toggle" aria-expanded="false" aria-controls="filter-panel"><svg><use href="#i-search"/></svg><span>Buscar e filtrar</span></button><div class="filter-panel" id="filter-panel" hidden><div class="filter-title"><div><strong>Buscar no feed</strong><p>Filtros aplicados ao feed</p></div><button type="button" class="icon-button" id="filter-close" aria-label="Fechar filtros"><svg><use href="#i-close"/></svg></button></div><form id="filter-form"><label for="query">Buscar por palavra-chave</label><input id="query" type="search" placeholder="Objeto, órgão ou categoria" autocomplete="off"><label>Período</label><div class="presets"><button type="button" data-preset="1">Ontem</button><button type="button" data-preset="7">7 dias</button><button type="button" data-preset="15">15 dias</button></div><div class="date-grid"><div><label for="date-start">De</label><input id="date-start" type="date" min="2026-11-04" max="2026-11-18" required></div><div><label for="date-end">Até</label><input id="date-end" type="date" min="2026-11-04" max="2026-11-18" required></div></div><p class="field-hint">Amostra disponível: 04 a 18 de novembro de 2026.</p><p class="field-error" id="filter-error" role="alert"></p><label for="filter-view">Exibir</label><select id="filter-view"><option value="selected">Selecionadas</option><option value="all">Todos os registros</option></select><div class="filter-actions"><button class="text-button" type="button" id="filter-reset">Limpar</button><button class="primary-button" type="submit">Aplicar filtros</button></div></form></div></div></div><div class="filter-summary"><span id="active-filter"></span><span id="match-count" aria-live="polite"></span></div><div id="feed" class="feed" aria-live="polite"></div><div class="feed-end"><button type="button" class="load-more" id="load-more">Carregar mais dias <svg><use href="#i-chevron"/></svg></button><p id="feed-end-text" hidden>Fim do período selecionado</p></div></section>
+        <footer class="page-footer"><span>Radar de oportunidades · IN Groupe</span><span>Ambiente de demonstração</span></footer>
+      </div>
+    </main>
+  </div>
+  <dialog id="details" class="details-dialog" aria-labelledby="details-title"><div class="dialog-head"><div><p class="overline">OPORTUNIDADE DEMONSTRATIVA</p><h2 id="details-title"></h2></div><button type="button" class="icon-button" id="dialog-close" aria-label="Fechar detalhes"><svg><use href="#i-close"/></svg></button></div><div id="dialog-content" class="dialog-content"></div></dialog>
+</body>
+</html>
