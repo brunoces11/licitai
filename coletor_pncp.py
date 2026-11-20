@@ -289,8 +289,8 @@ def prevent_sleep():
 
 def main():
     parser = argparse.ArgumentParser(description=__doc__)
-    parser.add_argument('--inicio', type=dt.date.fromisoformat, default=dt.date(2026, 1, 1))
-    parser.add_argument('--fim', type=dt.date.fromisoformat, default=dt.date(2026, 11, 17))
+    parser.add_argument('--inicio', type=dt.date.fromisoformat, default=dt.date(2026, 10, 1))
+    parser.add_argument('--fim', type=dt.date.fromisoformat, default=dt.date(2026, 11, 7))
     parser.add_argument('--banco', type=Path, default=ROOT / 'pncp.sqlite3')
     parser.add_argument('--log', type=Path, default=ROOT / 'coletor_pncp.log')
     args = parser.parse_args()
